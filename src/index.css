@@ -14,7 +14,7 @@ ul.header li {
   display: inline;
   list-style-type: none;
   margin-left: 1rem;
-  font-size: larger;
+  font-size: 20px;
 }
 ul.header {
   background-color: #111;
@@ -24,8 +24,12 @@ ul.header li a {
   color: #fff;
   font-weight: bold;
   text-decoration: none;
-  padding: 20px;
+  padding: 25px;
   display: inline-block;
+}
+ul.header li a:hover {
+  color: grey;
+  font-size: 20.5px;
 }
 .content {
   background-color: transparent;
@@ -42,4 +46,13 @@ ul.header li a {
 }
 .logo {
   color: #ced4da;
+  font-size: 2.4rem;
+  font-weight: 400;
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0 0 18px 0;
+}
+.logo:hover {
+  color: #e9ecef;
+  text-decoration: none;
 }

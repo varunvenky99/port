@@ -1,15 +1,28 @@
 import React, { Component } from "react";
-import { Route, NavLink, HashRouter } from "react-router-dom";
+import { Route, NavLink, HashRouter, Link } from "react-router-dom";
 import Home from "./Home";
 import About from "./About";
 import Contact from "./Contact";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import {
+  fab,
+  faTwitterSquare,
+  faFacebook,
+  faLinkedin,
+  faGithub,
+} from "@fortawesome/free-brands-svg-icons";
+library.add(fab, faTwitterSquare, faFacebook, faLinkedin, faGithub);
 
 class Main extends Component {
   render() {
     return (
       <HashRouter>
         <div>
-          <h1 className="logo">Varun Venkatesh</h1>
+          <div>
+            <Link className="logo" to="/">
+              Varun Venkatesh
+            </Link>
+          </div>
           <ul className="header">
             <li>
               <NavLink to="/">Home</NavLink>
@@ -23,6 +36,7 @@ class Main extends Component {
           </ul>
           <div className="content">
             <Route exact path="/" component={Home} />
+
             <Route path="/About" component={About} />
             <Route path="/contact" component={Contact} />
           </div>

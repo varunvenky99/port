@@ -1,0 +1,14 @@
+.home h2 {
+  color: #eece1a;
+  font-size: 50px;
+  margin-bottom: 0.6rem !important;
+}
+.home p {
+  color: #ced4da;
+  font-size: 30px;
+}
+.home {
+  font-weight: bolder;
+  font-size: larger;
+  padding: 1rem;
+}
